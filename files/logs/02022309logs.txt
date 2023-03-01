@@ -1,0 +1,11 @@
+10.81.234.7| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/draws/back-to-school-promo| GET |02022023-09:28:41
+10.81.234.28| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70 | /promotions/draws/valentines-promotion| GET |02022023-09:33:47
+10.81.234.28| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/draws/valentines-promotion| GET |02022023-09:34:05
+10.81.234.28| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70 | /promotions/draws/valentines-promotion| GET |02022023-09:38:52
+10.81.234.28| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70 | /promotions/draws/valentines-promotion| GET |02022023-09:40:01
+10.81.234.28| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70 | /promotions/draws/valentines-promotion| GET |02022023-09:46:38
+10.81.234.28| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70 | /promotions/draws/valentines-promotion| GET |02022023-09:47:52
+10.81.234.28| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/draws/valentines-promotion| GET |02022023-09:48:03
+10.81.234.28| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/draws/valentines-promotion| GET |02022023-09:48:25
+10.81.234.28| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/draws/valentines-promotion| GET |02022023-09:58:06
+10.81.234.28| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/draws/valentines-promotion| GET |02022023-09:58:17

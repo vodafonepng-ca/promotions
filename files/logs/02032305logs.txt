@@ -1,0 +1,2 @@
+10.81.234.24| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.57 | /promotions/| GET |02032023-05:47:07
+10.81.234.24| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.57 | /promotions/draws/valentines-promotion| GET |02032023-05:47:21

@@ -1,0 +1,6 @@
+10.81.234.26| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/draws/valentines-promotion| GET |02022023-08:11:09
+127.0.0.1| Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0 | /promotions/draws/valentines-promotion| GET |02022023-08:27:22
+10.81.234.26| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/draws/valentines-promotion| GET |02022023-08:30:12
+10.81.234.28| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70 | /promotions/draws/valentines-promotion| GET |02022023-08:45:41
+10.81.234.28| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70 | /promotions/draws/valentines-promotion| GET |02022023-08:53:16
+10.81.234.28| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70 | /promotions/draws/valentines-promotion| GET |02022023-08:53:24

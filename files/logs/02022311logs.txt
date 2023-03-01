@@ -1,0 +1,13 @@
+10.81.234.7| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70 | /promotions/| GET |02022023-11:37:17
+10.81.234.7| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70 | /promotions/draws/valentines-promotion| GET |02022023-11:38:45
+10.81.234.7| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/draws/valentines-promotion| GET |02022023-11:40:33
+10.81.234.7| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/draws/loadentries| GET |02022023-11:41:45
+10.81.234.7| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/api/loadcsv| POST |02022023-11:42:06
+10.81.234.7| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/draws/valentines-promotion| GET |02022023-11:42:06
+10.81.234.7| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/draws/loadentries| GET |02022023-11:42:08
+10.81.234.7| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/api/downloadcsv| POST |02022023-11:48:15
+10.81.234.7| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/api/downloadcsv| POST |02022023-11:48:21
+10.81.234.7| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/draws/reset-session| GET |02022023-11:48:34
+10.81.234.7| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/draws/valentines-promotion| GET |02022023-11:48:34
+10.81.234.7| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/draws/valentines-promotion| GET |02022023-11:52:32
+10.81.234.7| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 | /promotions/draws/valentines-promotion| GET |02022023-11:54:48

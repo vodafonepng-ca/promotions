@@ -1,0 +1,15 @@
+127.0.0.1| Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0 | /promotions/draws/reset-session| GET |25012023-07:57:02
+127.0.0.1| Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0 | /promotions/draws/back-to-school-promo| GET |25012023-07:57:02
+127.0.0.1| Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0 | /promotions/api/loadcsv| POST |25012023-07:57:08
+127.0.0.1| Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0 | /promotions/draws/back-to-school-promo| GET |25012023-07:57:08
+127.0.0.1| Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0 | /promotions/draws/loadentries| GET |25012023-07:57:09
+127.0.0.1| Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0 | /promotions/api/downloadcsv| POST |25012023-07:57:23
+10.81.234.12| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.61 | /promotions/draws| GET |25012023-07:58:11
+10.81.234.12| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.61 | /promotions/draws/back-to-school-promo| GET |25012023-07:58:12
+10.81.234.12| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.61 | /promotions/draws/loadentries| GET |25012023-07:58:13
+10.81.234.12| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.61 | /promotions/draws/reset-session| GET |25012023-07:58:16
+10.81.234.12| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.61 | /promotions/draws/back-to-school-promo| GET |25012023-07:58:16
+10.81.234.12| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.61 | /promotions/api/loadcsv| POST |25012023-07:58:29
+10.81.234.12| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.61 | /promotions/draws/back-to-school-promo| GET |25012023-07:58:29
+10.81.234.12| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.61 | /promotions/draws/loadentries| GET |25012023-07:58:30
+10.81.234.12| Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.61 | /promotions/api/downloadcsv| POST |25012023-07:59:22

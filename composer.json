@@ -1,0 +1,17 @@
+{
+    "name": "gideon.zozingao/promotions-draw-portal",
+    "description": "Promotions  Draw Portal for VFPNG",
+    "type": "project",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "GideonZozingao\\PromotionsDrawPortal\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "VFPNG VAS"
+        }
+    ],
+    "require": {}
+}
