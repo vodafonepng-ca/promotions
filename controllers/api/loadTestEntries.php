@@ -1,6 +1,6 @@
 <?php
 //$msisdn=$_REQUEST["msisdn"];
-        $conn = require_once './config/db-conn.php';
+      $conn = require_once'./controllers/config/db-conn.php';
         $respose =Array("status"=>"","message"=>"");
         $q="SELECT msisdn FROM test_entries";
         try{
@@ -11,24 +11,26 @@
         foreach($rows as $row){
             array_push($entryData,$row['msisdn']);
         }
+
         if(count($entryData)>0){
+            shuffle($entryData);
             $respose["status"]="success";
             $respose["message"]=$entryData;
             echo json_encode($respose);
         }else{
             $respose["status"]="error";
-            $respose["message"]="No Entries Available";
+            $respose["message"]="No Entreis Data";
           echo json_encode($respose);
         }
-        
-        //echo "You have $count entries register for back to school Promotions draw"; 
+
+        //echo "You have $count entries register for back to school Promotions draw";
         }catch(\PDOException $e){
             $respose["status"]="error";
-            $respose["message"]="Application Error. Please Contact the Development Team";
-            
+            $respose["message"]=$e->getMessage();
+
             echo json_encode($respose);
         }
-        
+
 
 
 ?>

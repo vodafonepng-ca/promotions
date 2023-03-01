@@ -3,7 +3,7 @@ $req=$_SERVER["REQUEST_METHOD"];
 
     switch ($req) {
         case 'GET':
-            $conn = require_once './config/db-conn.php';
+            $conn = require_once './controllers/config/db-conn.php';
             $respose =Array("status"=>"","message"=>"");
             $q="SELECT * FROM promotions";
             try{
@@ -20,15 +20,15 @@ $req=$_SERVER["REQUEST_METHOD"];
                 echo json_encode($respose);
             }else{
                 $respose["status"]="error";
-                $respose["message"]="No Entreis Data";
+                $respose["message"]="No users ";
               echo json_encode($respose);
             }
-            
-            //echo "You have $count entries register for back to school Promotions draw"; 
+
+            //echo "You have $count entries register for back to school Promotions draw";
             }catch(\PDOException $e){
                 $respose["status"]="error";
                 $respose["message"]=$e->getMessage();
-                
+
                 echo json_encode($respose);
             }
             break;

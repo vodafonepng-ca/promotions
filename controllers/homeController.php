@@ -2,25 +2,19 @@
 if($_SERVER["REQUEST_METHOD"]=="GET"){ 
 $request = $_SERVER['REQUEST_URI'];
 switch ($request) {
-   case $me.'/':
+   case '/':
       //code
          include("./views/home.php");
    break;
-   case $me.'/draws':
+   case '/draws':
          include("./views/home.php");
    break;
 
-   case $me.'/draws/back-to-school-promo':
+   case '/draws/back-to-school-promo':
       // code...
          include("./views/backToSchoolPromo.php");
       break;
-      // valentines-promotion
-
-      case $me.'/draws/valentines-promotion':
-         // code...
-            include("./views/backToSchoolPromo.php");
-         break;
-   case $me.'/draws/test':
+   case '/draws/test':
       // code...
          include("views/testDraws.php");
       break;

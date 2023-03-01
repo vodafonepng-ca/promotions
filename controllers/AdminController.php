@@ -1,19 +1,11 @@
-
 <?php
-$reqtype=$_SERVER["REQUEST_METHOD"];
+//session_start();
+if(isset($_SESSION['isadmin'])&&$_SESSION['isadmin']==true){
+  $title="Admin";
+  include(__DIR__.'../../views/admin/index.php');
+}else{
 
-
-switch ($reqtype) {
-    case 'GET':
-        include "./views/Admin.php";
-        break;
-    case 'POST':
-        
-        break;
-    default:
-        # code...
-        break;
+    $title="Admin Login";
+  include(__DIR__.'../../views/admin/login.php');
 }
-
-
-?>
+ ?>

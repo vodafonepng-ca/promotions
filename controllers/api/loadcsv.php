@@ -1,8 +1,7 @@
 <?php
-
-$conn = require_once './config/db-conn.php';
+$conn = require_once'./controllers/config/db-conn.php';
 $respose=Array('status'=>'','message'=>'');
-        
+
   if(isset($_FILES["upfile"])){
        $entries= array();
        $resEntries=array();
@@ -25,16 +24,17 @@ $respose=Array('status'=>'','message'=>'');
                 echo  json_encode($respose);
                 die();
           }else{
-            $target_dir =realpath("./files/entries/");
+            // ./public/files/entries/
+            $target_dir ="./public/files/entries/";
           $newfileName=date("ymdHis").microtime(true);
           $newName=$newfileName.".".$ext;
-          $fileNow=$target_dir. $newName;
+          $fileNow=$target_dir.$newName;
           $moveFIle=move_uploaded_file($file_tmp,$fileNow);
-          
+
           if($moveFIle){
             $csvFile=fopen( $fileNow,"r");
             $rows = [];
-            while (($data = fgetcsv($csvFile))!==false) {      
+            while (($data = fgetcsv($csvFile))!==false) {
 
             $rows[] = $data;
 
@@ -56,27 +56,27 @@ $respose=Array('status'=>'','message'=>'');
                 unlink($fileNow);
                 die();
           }else{
-            session_start();
+            // session_start();
                 $_SESSION["file_loaded"]=true;
                 $_SESSION["file_name"]=$fileNow;
                 $respose["status"]="success";
                 $respose["message"]="File Uploaded Successfully " ;
                 echo  json_encode($respose);
           }
-                
 
-                
-             
+
+
+
             }else{
 
               $respose["status"]="error";
               $respose["message"]="Error While Uploading file ".$fileNow;
               echo  json_encode($respose);
               die();
-              
+
           }
           }
-          
+
         } catch (\Exception $e) {
 
           $respose["status"]="error";
@@ -94,9 +94,9 @@ $respose=Array('status'=>'','message'=>'');
       $count=1;
       $resultArray=array("id"=>"","number"=>"","date"=>"");
       $a1 = array();
-      $csvFile=realpath("./files/results/drawresults.csv");
+      $csvFile="./public/files/results/drawresults.csv";
       try {
-        $fh= fopen(realpath("./files/results/drawresults.csv"),"w");
+        $fh= fopen($csvFile,"w");
          fputcsv($fh, $headers);
          foreach($_POST["results"] as $winner){
              $resultArray["id"]= $count;
