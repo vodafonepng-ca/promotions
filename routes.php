@@ -1,5 +1,5 @@
 <?php
-$base_url="/promotions-v.2";
+$base_url="/promotions";
 require_once 'router.php';
 require_once './app/auth.php';
 get($base_url, function(){
