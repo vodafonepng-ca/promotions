@@ -40,7 +40,7 @@
 </div>
   <nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top ">
     <div class="container-fluid">
-    <a class="navbar-brand text-white" href="">Admin</a>
+    <a class="navbar-brand text-white" href="/promotions/admin">Admin</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -82,8 +82,7 @@
           <i class="bi bi-person-fill"></i> <?=$_SESSION['isadminuser']?>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another </a>
+              
               <hr>
               <a class="dropdown-item" href="#" onClick="logOut()"> <i class="bi bi-power"></i> Logout</a>
           </div>
