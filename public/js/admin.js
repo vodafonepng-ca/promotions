@@ -49,7 +49,7 @@ function generateString(length) {
     }else{
       $.ajax({
         type:"POST",
-        url:"/promotions-v.2/admin/create-promotion",
+        url:"/promotions/admin/create-promotion",
         data:{promo_name,startdate,enddate,description},
         dataType:false,
         contentTye:false,
@@ -88,7 +88,7 @@ function generateString(length) {
   function confirmDelPromo(id){
     $.ajax({
       type:"POST",
-      url:"/promotions-v.2/admin/delet-promo",
+      url:"/promotions/admin/delet-promo",
       data:{id},
       dataType:false,
       contentTye:false,
@@ -114,7 +114,7 @@ function generateString(length) {
     $("#modal-lg-title").html("Update  Promotions")
     $.ajax({
       type:"POST",
-      url:"/promotions-v.2/admin/getpromoInfo",
+      url:"/promotions/admin/getpromoInfo",
       data:{id},
       dataType:false,
       contentTye:false,
@@ -171,7 +171,7 @@ function generateString(length) {
 
     $.ajax({
       type:"POST",
-      url: "/promotions-v.2/admin/update-promo",
+      url: "/promotions/admin/update-promo",
       data: {id,promoname,startdate,enddate,description,status},
       dataType:false,
       contentTye:false,
@@ -198,7 +198,7 @@ function generateString(length) {
     $("#admin-section").html("/Promotions")
       $.ajax({
           type:"GET",
-          url:"/promotions-v.2/admin/promotions",
+          url:"/promotions/admin/promotions",
           beforeSend:()=>{
               $("#admin-pannel").html("<p class='text-center text-muted'><img src='/public/images/Spinner-1s-69pxclear.gif'/></p>")
           },
@@ -212,7 +212,7 @@ function generateString(length) {
                    $(dataTable).addClass("table table-fluid table-striped");
                    $(dataTable).append(`<tr><th>ID</th><th>Promotion Name</th><th>Start Date</th><th>End Date</th><th>Status</th><th>Options  <button class='btn btn-primary float-right' title='Add new Promotion' onClick='newPromo()' data-target='#modal-lg'  data-toggle='modal'><i class='bi bi-plus-circle'></i></button></th></tr>`)
                    promodata.forEach((element)=>{
-                    $(dataTable).append(`<tr id='${element.id}'><td id=''>${element.id}</td><td><a href='/promotions-v.2/admin/promos/${element.id}'>${element.promotion_name}</a></td><td>${element.promotion_start_date}</td><td>${element.promotion_end_date}</td><td class='text-right ${element.status=='Active'?'text-success':''}'>${element.status}</td><td><a href="#" class='btn btn-primary btn-sm ' data-target='#modal-lg'  data-toggle='modal' onClick='viewPromo(${element.id})'> <i class="bi bi-eye"></i></a> <a href="#" class='btn btn-primary btn-sm update-promo' data-target='#modal-lg'  data-toggle='modal' onClick='updatePromo(${element.id})'> <i class="bi bi-pencil-square"></i>Update</a> <a href="#" class='btn btn-danger btn-sm del-promo' onClick='delPromo(${element.id})' data-toggle="modal" data-target="#modal-sm-center"> <i class="bi bi-trash"></i> </a></td></tr>`)
+                    $(dataTable).append(`<tr id='${element.id}'><td id=''>${element.id}</td><td><a href='/promotions/admin/promos/${element.id}'>${element.promotion_name}</a></td><td>${element.promotion_start_date}</td><td>${element.promotion_end_date}</td><td class='text-right ${element.status=='Active'?'text-success':''}'>${element.status}</td><td><a href="#" class='btn btn-primary btn-sm ' data-target='#modal-lg'  data-toggle='modal' onClick='viewPromo(${element.id})'> <i class="bi bi-eye"></i></a> <a href="#" class='btn btn-primary btn-sm update-promo' data-target='#modal-lg'  data-toggle='modal' onClick='updatePromo(${element.id})'> <i class="bi bi-pencil-square"></i>Update</a> <a href="#" class='btn btn-danger btn-sm del-promo' onClick='delPromo(${element.id})' data-toggle="modal" data-target="#modal-sm-center"> <i class="bi bi-trash"></i> </a></td></tr>`)
                    })
                   $("#admin-pannel").html(dataTable)
                   contentLoaded='promotions'
@@ -226,7 +226,7 @@ function generateString(length) {
 
     function logOut(){
       $.ajax({
-        url:"/promotions-v.2/admin/logout",
+        url:"/promotions/admin/logout",
         type:"POST",
         beforeSend:()=>{
 
@@ -334,7 +334,7 @@ function generateString(length) {
           }
           $.ajax({
               type:"POST",
-              url:"/promotions-v.2/admin/create-user",
+              url:"/promotions/admin/create-user",
               data: {super_admin,portal_admin,content_creator,
                     portal_user,fullname,email,phone,username,password,status},
                 dataType:false,
@@ -365,7 +365,7 @@ function generateString(length) {
         $("#admin-section").html("/Users")
           $.ajax({
               type:"GET",
-              url:"/promotions-v.2/admin/users",
+              url:"/promotions/admin/users",
               beforeSend:()=>{
                   $("#admin-pannel").html("<p class='text-center text-muted'><img src='/public/images/Spinner-1s-69pxclear.gif'/></p>")
               },
@@ -393,7 +393,7 @@ function generateString(length) {
     function viewUser(id){
       $.ajax({
         type:"POST",
-        url:"/promotions-v.2/admin/getuserInfo",
+        url:"/promotions/admin/getuserInfo",
         data:{id},
         dataType:false,
         contentTye:false,
@@ -476,7 +476,7 @@ let data="";
     $("#modal-lg-title").html("Update  Promotions")
     $.ajax({
       type:"POST",
-      url:"/promotions-v.2/admin/getuserInfo",
+      url:"/promotions/admin/getuserInfo",
       data:{id},
       dataType:false,
       contentTye:false,
@@ -562,7 +562,7 @@ let data="";
         let  uid=id;
       $.ajax({
         type:"POST",
-        url:"/promotions-v.2/admin/delete-user",
+        url:"/promotions/admin/delete-user",
         data:{uid},
         dataType:false,
         contentTye:false,
@@ -624,7 +624,7 @@ function postUpdateUser(uid){
 
       $.ajax({
           type:"POST",
-          url:"/promotions-v.2/admin/update-user",
+          url:"/promotions/admin/update-user",
           data: {super_admin,portal_admin,content_creator,
                 portal_user,fullname,email,phone,username,upassword,status,uid},
             dataType:false,

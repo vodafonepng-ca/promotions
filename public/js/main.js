@@ -5,7 +5,7 @@ $(document).ready(()=>{
     
 })
     $("#Back").on("click",()=>{
-        window.location.replace("/promotions-v.2/draws/");
+        window.location.replace("/promotions/draws/");
     })
 let date = new Date()
 let year = date.getFullYear();
@@ -102,14 +102,14 @@ $("#fileLoadingForm").on("submit", function (e) {
 /*Asyncrouosuly submit the form data to the server*/
     $.ajax({
         type: 'POST',
-        url: '/promotions-v.2/api/loadcsv',
+        url: '/promotions/api/loadcsv',
         data: new FormData(this),
         dataType: false,
         contentType: false,
         cache: false,
         processData: false,
         beforeSend: () => {
-            $("#entries").html("<img src='/promotions-v.2/public/images/bars.svg'/>")
+            $("#entries").html("<img src='/promotions/public/images/bars.svg'/>")
             $("#entries").append("<p>Uploading File...<p>")
         },
         success: (response) => {
@@ -142,7 +142,7 @@ function DownloadResults(){
     const dt=rsults
     $.ajax({
         type: 'POST',
-        url: '/promotions-v.2/api/downloadcsv',
+        url: '/promotions/api/downloadcsv',
         data:{results:dt} ,
         beforeSend: () => {
         },
@@ -338,7 +338,7 @@ function save() {
 function reset() {
     $.ajax({
         type:"GET",
-        url:"/promotions-v.2/session/reset-session",
+        url:"/promotions/session/reset-session",
         beforeSend:()=>{
 
         },
@@ -387,10 +387,10 @@ function loadEntries(){
     try{
         $.ajax({
           type: 'GET',
-          url: '/promotions-v.2/sessions/loadentries',
+          url: '/promotions/sessions/loadentries',
 
         beforeSend:()=>{
-            $("#entries").html("<img src='/promotions-v.2/public/images/bars.svg'/>")
+            $("#entries").html("<img src='/promotions/public/images/bars.svg'/>")
             $("#entries").append("<p>Loading Entries...<p>")
         },
         success: (response) => {
@@ -405,7 +405,7 @@ function loadEntries(){
 
           }else {
             // console.log(response)
-            $("#app").css({"background":"url(/promotions-v.2/public/images/light3.jpg)"})
+            $("#app").css({"background":"url(/promotions/public/images/light3.jpg)"})
             const resnums=resData.message;
 
                     for(let i=0; i<resnums.length; i++){

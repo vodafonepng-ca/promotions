@@ -12,8 +12,8 @@ if($rowsCount>0){
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="/public/image/x-icon" href="/promotions-v.2/images/vf-icon.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/promotions-v.2/public/css/cosmo.css" />
-  <link rel="stylesheet" href="/promotions-v.2/public/css/main.css" />
+  <link rel="stylesheet" href="/promotions/public/css/cosmo.css" />
+  <link rel="stylesheet" href="/promotions/public/css/main.css" />
 </head>
 <body>
   <?php include("nav.php")?>
@@ -30,7 +30,7 @@ if($rowsCount>0){
         <div class="card-body">
           <?php if($rows[0]['coverImage']!==null&&file_exists("./public/images/uploads/".$rows[0]['coverImage'])){
             ?>
-            <img src="/promotions-v.2/public/images/uploads/<?php echo $rows[0]['coverImage']?>" class="img-responsive img-fluid"/>
+            <img src="/promotions/public/images/uploads/<?php echo $rows[0]['coverImage']?>" class="img-responsive img-fluid"/>
             <?php
           } else{
             ?>
@@ -59,7 +59,7 @@ if($rowsCount>0){
     e.preventDefault();
       $.ajax({
         type:'POST',
-        url:"/promotions-v.2/admin/promo/uploadcover",
+        url:"/promotions/admin/promo/uploadcover",
         data:new FormData($(this)[0]),
         contentType:false,
         dataType:false,
@@ -90,7 +90,7 @@ if($rowsCount>0){
       reader.readAsDataURL($input[0].files[0]);
     })
   </script>
-  <script src="/promotions-v.2/public/js/admin.js"></script>
+  <script src="/promotions/public/js/admin.js"></script>
 </body>
 </html>
 <?php

@@ -5,6 +5,7 @@ if(isset($drawname)){
   include("includes/head.php");
   if(isset($_SESSION["file_loaded"])&&$_SESSION["file_loaded"]===true){
     ?>
+    </head>
         <body id="app">
               <div class="modal modal-open" id="modal-1">
                   <div class="modal-content modal-dialog">
@@ -66,7 +67,7 @@ if(isset($drawname)){
                 <a href="#"  class="btn btn-outline-dark text-white" id="exitfullscreen" title="Exit fullscreen"> <i class="bi bi-arrows-angle-contract"></i></a>
                 </div>
               </nav>
-              <script src="/promotions-v.2/public/js/main.js"></script>
+              <script src="/promotions/public/js/main.js"></script>
               <script>
                 $(document).ready(function(){
 
@@ -103,7 +104,7 @@ if(isset($drawname)){
                   $(document).bind('fscreenchange', function(e, state, elem) {
                     // if we currently in fullscreen mode
                     if ($.fullscreen.isFullScreen()) {
-                      $("#app").css({"background":"url(./public/images/light3.jpg)"})
+                      $("#app").css({"background":"url(/promotions/public/images/light3.jpg)"})
                       $('#requestfullscreen').hide();
                       $('#exitfullscreen').show();
                     } else {
@@ -119,9 +120,9 @@ if(isset($drawname)){
           </body>
         </html>
 <?php
-
 }else{?>
-      <body  style="background: url(/promotions-v.2/public/images/uploads/<?=$rows["coverImage"];?>); background-size:100%">
+</head>
+      <body  style="background: url(/promotions/public/images/uploads/<?=$rows["coverImage"];?>); background-size:100%">
           <div class="modal modal-open" id="modal-1">
               <div class="modal-content modal-dialog">
                   <div class="modal-header">
@@ -156,7 +157,7 @@ if(isset($drawname)){
                   <div id="varnote" class="container">
                     <br>
                     <br>
-                      <h1 class="text-muted"> <?=$rows["promotion_name"]?> Draw</h1>
+                      <!-- <h2 class="text-muted"> <?=$rows["promotion_name"]?> Draw</h2> -->
                       <!-- <div class="copyright">Vodafone PNG &copy; <span id="year"></span></div> -->
                   </div>
                   <br>
@@ -220,7 +221,7 @@ if(isset($drawname)){
     })
 
     $("#Back").on("click",()=>{
-            window.location.replace("/promotions-v.2/");
+            window.location.replace("/promotions/");
         })
     $("#upload").on("click", () => {
 
@@ -240,14 +241,14 @@ if(isset($drawname)){
     /*Asyncrouosuly submit the form data to the server*/
         $.ajax({
             type: 'POST',
-            url: '/promotions-v.2/api/loadcsv',
+            url: '/promotions/api/loadcsv',
             data: new FormData(this),
             dataType: false,
             contentType: false,
             cache: false,
             processData: false,
             beforeSend: () => {
-                $("#entries").html("<img src='/promotions-v.2/public/images/bars.svg'/>")
+                $("#entries").html("<img src='/promotions/public/images/bars.svg'/>")
                 $("#entries").append("<p>Uploading File...<p>")
             },
             success: (response) => {
@@ -273,9 +274,9 @@ if(isset($drawname)){
         try{
             $.ajax({
             type: 'GET',
-            url: '/promotions-v.2/sessions/loadentries',
+            url: '/promotions/sessions/loadentries',
             beforeSend:()=>{
-                $("#entries").html("<img src='/promotions-v.2/public/images/bars.svg'/>")
+                $("#entries").html("<img src='/promotions/public/images/bars.svg'/>")
                 $("#entries").append("<p>Loading Data...<p>")
             },
             success: (response) => {
@@ -288,7 +289,7 @@ if(isset($drawname)){
 
               }else {
                 $("#entries").html("")
-                $("#app").css({"background":"url(/promotions-v.2/public//images/light3.jpg)"})
+                $("#app").css({"background":"url(/promotions/public/images/light3.jpg)"})
 
                     $("#app").css({"background-size": '100%'})
                     $("#app").css({"background-repeat": 'no-repeat'})
@@ -299,7 +300,7 @@ if(isset($drawname)){
                         }
 
                         resData="";
-                        $("#app").css({"background":"url(/promotions-v.2/public//images/light3.jpg)"})
+                        $("#app").css({"background":"url(/promotions/public/images/light3.jpg)"})
                         let nums = arr[0];
 
                         for (let i = 1; i < arr.length; i++) {
@@ -342,7 +343,7 @@ if(isset($drawname)){
       let logout=true
       $.ajax({
         type:"POST",
-        url:"/promotions-v.2/user/logout",
+        url:"/promotions/user/logout",
         data:{logout,},
         dataType:false,
         contentType:false,
@@ -371,7 +372,115 @@ if(isset($drawname)){
 }else{
   include("includes/head.php");
   ?>
-        <body style="background: url(/promotions-v.2/public/images/vodafone-png.png); background-size:100%">
+  <style>
+  
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+  body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+  }
+    .background-radial-gradient {
+      background-color: hsl(353, 77%, 19%);
+      background-image: radial-gradient(650px circle at 0% 0%,
+          hsl(356, 61%, 27%) 15%,
+          hsl(356, 61%, 30%) 35%,
+          hsl(356, 61%, 20%) 75%,
+          hsl(356, 61%, 19%) 80%,
+          transparent 100%),
+        radial-gradient(1250px circle at 100% 100%,
+          hsl(356, 61%, 45%) 15%,
+          hsl(356, 61%, 30%) 35%,
+          hsl(356, 61%, 20%) 75%,
+          hsl(357, 61%, 19%) 80%,
+          transparent 100%);
+          background-size: 100%;
+          background-repeat: no-repeat;
+    }
+    #radius-shape-1 {
+      height: 210px;
+      width: 210px;
+      top: -90px;
+      left: -130px;
+      background: radial-gradient(#870312,#28010d) ;
+        
+      overflow: hidden;
+      box-shadow: 1px 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    #radius-shape-3 {
+      border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+      height: 110px;
+      width: 110px;
+      bottom: -90px;
+      left: -130px;
+      
+      background: radial-gradient(#cd041c,#28010d) ;
+      overflow: hidden;
+      box-shadow: 1px 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .bg-glass {
+      background-color: hsla(0, 0%, 100%, 0.5) !important;
+      backdrop-filter: saturate(200%) blur(25px);
+    }
+    .main{
+      width: 100%;
+    }#radius-shape-2 {
+      border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+      bottom: -60px;
+      right: -90px;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(#fb233c,#6f1b20);
+      overflow: hidden;
+      box-shadow: 1px 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+      #radius-shape-4 {
+      border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+      bottom: -90px;
+      left: -90px;
+      width: 150px;
+      height: 150px;
+      background: radial-gradient(#870312,#28010d) ;
+        
+      overflow: hidden;
+      box-shadow: 1px 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .promo-lin-main{
+      display: flex;
+      flex-flow: column;
+      flex-wrap: wrap-reverse;
+      margin: 10px;
+    }
+    .promo-link{
+      width: 100px;
+      height: 100px;
+      
+    }
+    @media(max-width:1200px){
+      #radius-shape-2 {
+      
+      bottom: -60px;
+      right: 2px;
+      width: 200px;
+      height: 200px;
+      
+      overflow: hidden;
+    }
+    #radius-shape-3 {
+      
+      height: 110px;
+      width: 110px;
+      bottom: -90px;
+      left: -5px;
+      
+      
+    }
+    .shrink-hide{
+      display: none;
+    }
+    }
+  </style>
+  </head>
+        <body class="background-radial-gradient ">
           <nav class="navbar navbar-expand-lg navbar-light bg-clear ">
             <div class="container">
 
@@ -396,13 +505,18 @@ if(isset($drawname)){
               <main class="container-fluid">
                   <div class="header" id="header">
                       <div id="varnote" class="container">
-                          <img src="/promotions-v.2/public/images/logo-footer.png">
+                          <img src="/promotions/public/images/logo-footer.png">
                           <h1 class="text-white"> Promotion Draws </h1>
                           <!-- <div class="copyright">Vodafone PNG &copy; <span id="year"></span></div> -->
-                      </div>
+                          
+                        </div>
                       <div id="main-nav">
+                        
                       </div>
                   </div>
+                  <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+        <!-- <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div> -->
+                  <div id="radius-shape-3" class="position-absolute shadow-5-strong rounded-circle"></div>
               </main>
               <nav class="fixed-bottom">
                 <div class="float-left">
@@ -418,7 +532,7 @@ if(isset($drawname)){
               function loadPromotions(){
                   $.ajax({
                       type:"GET",
-                      url:"/promotions-v.2/promotions/loadactive",
+                      url:"/promotions/promotions/loadactive",
                       beforeSend:()=>{
                           $("#main-nav").html("<p class='text-center text-muted'><img src='/public/images/load.gif'/></p>")
                       },
@@ -432,7 +546,7 @@ if(isset($drawname)){
                               $(nav).addClass("d-flex justify-content-center");
                               promodata.forEach((element)=>{
                                 console.log(element.promotion_link)
-                                $(nav).append(`<button class="btn btn-success btn-lg" onClick='gotoPromopage(${element.id})'>${element.promotion_name}</button>`)
+                                $(nav).append(`<div class='promo-lin-main'><div class="bg-dark btn rounded-circle promo-link " onClick='gotoPromopage(${element.id})' style='background:url()'></div><p class="text-white text-center">${element.promotion_name}</p></div>`)
                               })
                               $("#main-nav").html(nav)
                           }
@@ -444,13 +558,13 @@ if(isset($drawname)){
                 }
 
                 function gotoPromopage(link){
-                  window.location.replace(`/promotions-v.2/draws/${link}`)
+                  window.location.replace(`/promotions/draws/${link}`)
                 }
                 function logOut(){
         let logout=true
         $.ajax({
           type:"POST",
-          url:"/promotions-v.2/user/logout",
+          url:"/promotions/user/logout",
           data:{logout,},
           dataType:false,
           contentType:false,

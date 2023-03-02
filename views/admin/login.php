@@ -48,7 +48,6 @@ height: 100%;
            <div class="text-center text-lg-start mt-4 pt-2">
              <button type="submit" class="btn btn-secondary btn-lg" id="login-btn"
                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-
            </div>
          </form>
        </div>
@@ -60,13 +59,12 @@ height: 100%;
    $("#loginForm").on("submit",function(e){
      e.preventDefault()
       const uname=$("#username").val(),passwd=$("#password").val()
-
       if(uname===""||passwd===""){
         alert("Form fields not  completed");
       }else{
         $.ajax({
           type:"POST",
-          url:"/promotions-v.2/admin/login",
+          url:"/promotions/admin/login",
           data:{uname,passwd},
           dataType:false,
           cacheData:false,
