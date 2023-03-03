@@ -26,10 +26,7 @@
             <div class="card-body" id="admin-pannel">
             </div>
     </div>
-    <!-- <script src="/public/js/jquery-latest.min.js"></script> -->
     
-
-    <!-- <script src="/public/js/jquery-latest.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   
     <script src="/promotions/public/js/admin.js"></script>
